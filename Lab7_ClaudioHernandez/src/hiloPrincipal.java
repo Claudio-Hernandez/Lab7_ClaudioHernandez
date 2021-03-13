@@ -64,6 +64,8 @@ public class hiloPrincipal extends Thread {
                         hiloR.start();
                         
                     }else if (opccion==2) {
+                        JOptionPane.showMessageDialog(null," mision fallida");
+
                         vive2=false;
                     }
                  vive=false;

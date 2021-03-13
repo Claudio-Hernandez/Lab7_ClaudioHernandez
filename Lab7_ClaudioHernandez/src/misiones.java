@@ -18,11 +18,21 @@ public class misiones implements Serializable{
     private naves nave;
     private ArrayList<astronautas> astronautasAbordo =  new ArrayList();
     private String condicion ;
+    private planetas planeta;
 
-    public misiones(naves nave, String condicion,ArrayList<astronautas> astronautasAbordo) {
+    public misiones(naves nave, String condicion,ArrayList<astronautas> astronautasAbordo,planetas planeta) {
         this.nave = nave;
         this.condicion = condicion;
         this.astronautasAbordo= astronautasAbordo;
+        this.planeta =  planeta;
+    }
+
+    public planetas getPlaneta() {
+        return planeta;
+    }
+
+    public void setPlaneta(planetas planeta) {
+        this.planeta = planeta;
     }
 
     public naves getNave() {
@@ -51,7 +61,7 @@ public class misiones implements Serializable{
 
     @Override
     public String toString() {
-        return "\nmision:" + "Nave Utilizada =" + nave + "\n Astronautas Abordo = " + astronautasAbordo + "\n  condicion=" + condicion+"\n========================";
+        return "\nmision:" + "Nave Utilizada =" + nave + "\n Astronautas Abordo = " + astronautasAbordo +"\n   planeta"+planeta+ "\n  condicion=" + condicion+"\n========================";
     }
     
     

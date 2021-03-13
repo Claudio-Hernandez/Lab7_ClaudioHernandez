@@ -122,6 +122,8 @@ public class principal extends javax.swing.JFrame {
         nombreNaveArea = new javax.swing.JTextField();
         jLabel36 = new javax.swing.JLabel();
         jButton10 = new javax.swing.JButton();
+        nombrP = new javax.swing.JTextField();
+        jLabel39 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
@@ -858,8 +860,11 @@ public class principal extends javax.swing.JFrame {
         jLabel30.setText("Nave utilizada");
 
         jLabel31.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        jLabel31.setForeground(new java.awt.Color(255, 255, 255));
         jLabel31.setText("Astronautas asignados");
 
+        tablaAstronautas.setBackground(new java.awt.Color(0, 0, 255));
+        tablaAstronautas.setForeground(new java.awt.Color(255, 255, 255));
         tablaAstronautas.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -883,6 +888,7 @@ public class principal extends javax.swing.JFrame {
         jScrollPane2.setViewportView(areaMisiones);
 
         jLabel32.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        jLabel32.setForeground(new java.awt.Color(255, 255, 255));
         jLabel32.setText("Resumen general de misiones");
 
         todasMisiones.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
@@ -896,6 +902,7 @@ public class principal extends javax.swing.JFrame {
         nombreNaveArea.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
 
         jLabel36.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        jLabel36.setForeground(new java.awt.Color(255, 255, 255));
         jLabel36.setText("Misiones (elija una para ver detalles)");
 
         jButton10.setText("Cerrar");
@@ -905,75 +912,98 @@ public class principal extends javax.swing.JFrame {
             }
         });
 
+        nombrP.setEditable(false);
+
+        jLabel39.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        jLabel39.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel39.setText("Planeta");
+
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                .addGap(67, 67, 67)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel30)
-                    .addComponent(nombreNaveArea, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(120, 120, 120)
-                        .addComponent(jLabel36)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(todasMisiones, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(150, 150, 150)
-                        .addComponent(jLabel32)
-                        .addGap(100, 100, 100))))
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(508, 508, 508)
-                .addComponent(jLabel29)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane1)
-                .addGap(18, 18, 18)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jScrollPane1))
+                            .addGroup(jPanel6Layout.createSequentialGroup()
+                                .addGap(214, 214, 214)
+                                .addComponent(jLabel31)
+                                .addGap(0, 0, Short.MAX_VALUE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(286, 286, 286)
+                        .addComponent(jLabel39)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 385, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(29, 29, 29))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addContainerGap(412, Short.MAX_VALUE)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                        .addComponent(jLabel31)
-                        .addGap(872, 872, 872))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                        .addComponent(jLabel29)
+                        .addGap(378, 378, 378)
                         .addComponent(jButton10)
-                        .addGap(60, 60, 60))))
+                        .addGap(60, 60, 60))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                        .addComponent(jLabel36)
+                        .addGap(361, 361, 361))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                        .addComponent(todasMisiones, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(392, 392, 392))))
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(236, 236, 236)
+                        .addComponent(jLabel30))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(227, 227, 227)
+                        .addComponent(nombreNaveArea, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel32)
+                .addGap(100, 100, 100))
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(213, 213, 213)
+                .addComponent(nombrP, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(167, 167, 167)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(48, 48, 48)
+                        .addComponent(jButton10))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(32, 32, 32)
+                        .addComponent(jLabel29)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel36)))
+                .addGap(18, 18, 18)
+                .addComponent(todasMisiones, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 85, Short.MAX_VALUE)
                 .addComponent(jLabel30)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(nombreNaveArea, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(55, 55, 55)
-                .addComponent(jLabel31)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addComponent(jLabel29)
-                .addGap(4, 4, 4)
-                .addComponent(jButton10)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 107, Short.MAX_VALUE)
-                .addComponent(jLabel36)
-                .addGap(33, 33, 33)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel32)
-                            .addComponent(todasMisiones, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(76, 76, 76)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(167, 167, 167))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(114, 114, 114))))
+                        .addGap(165, 165, 165))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel32)
+                            .addComponent(nombreNaveArea, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(59, 59, 59)
+                        .addComponent(jLabel31)
+                        .addGap(18, 18, 18)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(26, 26, 26)
+                        .addComponent(jLabel39, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(nombrP, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(101, Short.MAX_VALUE))))
         );
 
         javax.swing.GroupLayout misionesVeerLayout = new javax.swing.GroupLayout(misionesVeer.getContentPane());
@@ -1228,7 +1258,7 @@ public class principal extends javax.swing.JFrame {
             //hiloReserva.start();
 
         }
-        misiones misionN = new misiones(naveAmision, "terminada", astronautasAbordo);
+        misiones misionN = new misiones(naveAmision, "terminada", astronautasAbordo,planetaSelec);
         adminMisiones adminM = new adminMisiones("./misiones.mi");
         adminM.cargarArchivo();
         adminM.setMision(misionN);
@@ -1274,8 +1304,14 @@ public class principal extends javax.swing.JFrame {
     private void todasMisionesItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_todasMisionesItemStateChanged
 
         if (evt.getStateChange() == 1) {
+            DefaultTableModel modelo1 = (DefaultTableModel) tablaAstronautas.getModel();
+
+            for (int i = 0; i < modelo1.getRowCount(); i++) {
+                modelo1.removeRow(i);
+            }
             misiones temp = (misiones) todasMisiones.getSelectedItem();
             nombreNaveArea.setText(temp.getNave().toString());
+            nombrP.setText(temp.getPlaneta().toString());
             ArrayList<astronautas> v = temp.getAstronautasAbordo();
             DefaultTableModel modelo = (DefaultTableModel) tablaAstronautas.getModel();
             for (int i = 0; i < v.size(); i++) {
@@ -1388,21 +1424,21 @@ public class principal extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(this, "astronauta modificado");
         adminA.escribirArchivo();
 
-       
+
     }//GEN-LAST:event_jButton11MouseClicked
 
     private void jButton12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton12MouseClicked
-        adminNaves navess =  new adminNaves("./naves.spaceships");
+        adminNaves navess = new adminNaves("./naves.spaceships");
         navess.cargarArchivo();
-        navess.getListaNaves().get(posnave).setCombustiblePorKilometros((double)combustiblePorKilometro.getValue());
-        navess.getListaNaves().get(posnave).setCombustibleReserva((double)combusReserva.getValue());
-        navess.getListaNaves().get(posnave).setCombustibleTanquePrincipal((double)combustiblePrincipal.getValue());
+        navess.getListaNaves().get(posnave).setCombustiblePorKilometros((double) combustiblePorKilometro.getValue());
+        navess.getListaNaves().get(posnave).setCombustibleReserva((double) combusReserva.getValue());
+        navess.getListaNaves().get(posnave).setCombustibleTanquePrincipal((double) combustiblePrincipal.getValue());
         navess.getListaNaves().get(posnave).setNombre(nombreNave.getText());
-        navess.getListaNaves().get(posnave).setNumeroDeAstronautas((int)numeroPasajeros.getValue());
+        navess.getListaNaves().get(posnave).setNumeroDeAstronautas((int) numeroPasajeros.getValue());
         navess.getListaNaves().get(posnave).setIdentificador(identifNave.getText());
-                navess.getListaNaves().get(posnave).setTiempoDeAterrizaje((double)tiempoAterrizaje.getValue());
-        navess.getListaNaves().get(posnave).setCombustiblePorKilometros((double)tiempoDeDespegue.getValue());
-                navess.getListaNaves().get(posnave).setVelocidadViaja((double)velocidadQueviaja.getValue());
+        navess.getListaNaves().get(posnave).setTiempoDeAterrizaje((double) tiempoAterrizaje.getValue());
+        navess.getListaNaves().get(posnave).setCombustiblePorKilometros((double) tiempoDeDespegue.getValue());
+        navess.getListaNaves().get(posnave).setVelocidadViaja((double) velocidadQueviaja.getValue());
         DefaultComboBoxModel modelo3 = new DefaultComboBoxModel(navess.getListaNaves().toArray());
         navesmod.setModel(modelo3);
         navess.escribirArchivo();
@@ -1412,13 +1448,13 @@ public class principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton12MouseClicked
 
     private void jButton13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton13MouseClicked
-                adminPlanetas p =  new adminPlanetas("./planetas.pla");
-                p.cargarArchivo();
-                p.getListaPlanetas().get(posplaneta).setDistanciaLugaryTierra((double)distanciaPlaneta.getValue());
-                p.getListaPlanetas().get(posplaneta).setNombre(nombrePlaneta.getText());
-                p.getListaPlanetas().get(posplaneta).setSaturacion((int)saturacionPlaneta.getValue());
-                p.getListaPlanetas().get(posplaneta).setTipoSuperficie(superficie2.getSelectedItem().toString());
-                 DefaultComboBoxModel modelo3 = new DefaultComboBoxModel(p.getListaPlanetas().toArray());
+        adminPlanetas p = new adminPlanetas("./planetas.pla");
+        p.cargarArchivo();
+        p.getListaPlanetas().get(posplaneta).setDistanciaLugaryTierra((double) distanciaPlaneta.getValue());
+        p.getListaPlanetas().get(posplaneta).setNombre(nombrePlaneta.getText());
+        p.getListaPlanetas().get(posplaneta).setSaturacion((int) saturacionPlaneta.getValue());
+        p.getListaPlanetas().get(posplaneta).setTipoSuperficie(superficie2.getSelectedItem().toString());
+        DefaultComboBoxModel modelo3 = new DefaultComboBoxModel(p.getListaPlanetas().toArray());
         planetasmod.setModel(modelo3);
         JOptionPane.showMessageDialog(this, "Planeta modificado");
         p.escribirArchivo();
@@ -1520,6 +1556,7 @@ public class principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -1538,6 +1575,7 @@ public class principal extends javax.swing.JFrame {
     private javax.swing.JDialog misionesVeer;
     private javax.swing.JTextField nacionalidad;
     private javax.swing.JComboBox<String> navesmod;
+    private javax.swing.JTextField nombrP;
     private javax.swing.JTextField nombreNave;
     private javax.swing.JTextField nombreNaveArea;
     private javax.swing.JTextField nombrePlaneta;
